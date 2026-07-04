@@ -1,0 +1,10 @@
+_target_: FM_HiREF.model.hireflow.HiReFlow
+
+net: ${net}
+
+warmup_epochs: 0
+max_epochs: 5
+lr: 1e-4
+use_scheduler: False
+
+aligner: ${aligner}

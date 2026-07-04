@@ -1,0 +1,10 @@
+_target_: FM_HiREF.data.datamodule.PDBDataModule
+
+pdb_dir: ${pdb_dir}
+scale: 10.
+train_val_test_split: [1., 0., 0.] # [0.8, 0.1, 0.1]
+batch_size: 4
+max_factor: 5
+num_workers: 0
+persistent_workers: false
+seed: ${seed}

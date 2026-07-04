@@ -1,0 +1,26 @@
+_target_: lightning.pytorch.Trainer
+
+max_epochs: ${model.max_epochs}
+precision: "bf16-mixed"
+
+accelerator: auto
+devices: 1
+enable_checkpointing: true
+
+callbacks:
+  # 1. Best Validation Loss & Final Checkpoint
+  - _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    filename: "best-val-epoch_{epoch:02d}"
+    monitor: "val/loss"
+    mode: "min"
+    save_top_k: 1
+    save_last: true
+    auto_insert_metric_name: false
+
+  # 2. Best Training Loss Checkpoint
+  - _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    filename: "best-train-epoch_{epoch:02d}"
+    monitor: "train/loss"
+    mode: "min"
+    save_top_k: 1
+    auto_insert_metric_name: false

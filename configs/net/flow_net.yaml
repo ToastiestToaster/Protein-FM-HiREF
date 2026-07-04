@@ -1,0 +1,24 @@
+_target_: FM_HiREF.model.flowmatcher.FlowMatchingNetwork
+
+# Conditioning
+t_embed_dim: 128
+c_dim: 128
+c_factor: 2
+
+# Pair
+pair_dim: 128
+relpos_dim: 33
+xt_pair_dist_dim: 30
+xt_pair_dist_min: 0.1  
+xt_pair_dist_max: 3.0
+
+# Single
+idx_emb_dim: 128
+token_dim: 192
+
+# Structure Module
+ipa_hidden_dim: 32
+ipa_heads: 12
+qk_points: 4
+v_points: 8
+structure_layers: 8

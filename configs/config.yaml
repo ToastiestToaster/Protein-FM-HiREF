@@ -1,0 +1,11 @@
+defaults:
+  - data: scope_data
+  - aligner: async_aligner
+  - net: flow_net
+  - model: hireflow
+  - trainer: trainer
+  - _self_
+
+seed: null
+pdb_dir: ???
+matmul_precision: "medium"

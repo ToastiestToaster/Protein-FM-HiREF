@@ -1,0 +1,16 @@
+_target_: FM_HiREF.aligner.async_aligner.AsyncAligner
+_partial_: true
+
+alignment_threshold: 8
+max_workers: 4
+
+aligner:
+  _target_: FM_HiREF.aligner.HiRef.HiRefOT
+  _partial_: true
+  gamma: 100
+  rescale_cost: true
+  iters_per_level: 100
+  max_sinkhorn_iter: 15
+  max_depth: 6
+  max_terminal_rank: 80
+  max_rank: 80
