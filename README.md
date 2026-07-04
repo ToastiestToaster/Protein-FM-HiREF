@@ -72,7 +72,7 @@ Open `sample_protein.ipynb` and run the necessary cells for inference.
 
 
 ### Training
-Training requires a single command:
+After adjusting the config files, training requires a single command:
 ```bash
 python -m train.py pdb_dir=/path/to/training/dir
 ```
