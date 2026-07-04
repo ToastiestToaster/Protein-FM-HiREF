@@ -7,7 +7,7 @@
 
 `Protein Toaster` globally aligns the source distribution (noise) with the target distribution (protein domains) using **Hierarchical Refinement: Optimal Transport (HiRef)**, acting as a prior during training to produce straighter trajectory paths for inference [1]. 
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 500px;">
   <img src="media/gif_1.gif" alt="Generation 1" width="100%">
   <img src="media/gif_2.gif" alt="Generation 2" width="100%">
   <img src="media/gif_3.gif" alt="Generation 3" width="100%">
