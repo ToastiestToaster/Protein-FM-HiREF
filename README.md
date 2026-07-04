@@ -78,7 +78,7 @@ python -m train.py pdb_dir=/path/to/training/dir
 ```
 You may need to make your own custom `dataset.py` depending on the dataset.
 
-### References
+# References
 [1] Halmos, P., Gold, J., Liu, X., & Raphael, B. (2025). "Hierarchical Refinement: Optimal Transport to Infinity and Beyond." *International Conference on Machine Learning (ICML)*.
 
 [2] Bose, A. J., et al. (2024). "SE(3)-Stochastic Flow Matching for Protein Backbone Generation." *International Conference on Learning Representations (ICLR)*.
