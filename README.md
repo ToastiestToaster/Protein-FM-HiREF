@@ -50,7 +50,7 @@ Protein Toaster was evaluated with varying step rates (25, 50, and 250 steps), g
 | Inference Steps | Confidently Designable | Diversity | Novelty |
 | :---: | :---: | :---: | :---: |
 | **25 Steps** | 35.7% | 14.8% | 2.2% |
-| **50 Steps** | 30.5% () | 13.0% | 1.4% |
+| **50 Steps** | 30.5% | 13.0% | 1.4% |
 | **250 Steps** | 26.0%  | 11.8% | 0.6% |
 
 Protein Toaster generates **63.1% primarily α-helical**, **14.2% primarily β-strand**, and **17.8% α/β-mixed** domains.
