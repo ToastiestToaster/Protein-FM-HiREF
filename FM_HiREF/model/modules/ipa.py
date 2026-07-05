@@ -54,23 +54,6 @@ class InvariantPointAttention(nn.Module):
         v = self.linear_v(single)
         v = v.view(v.shape[:-1] + (self.heads, self.hidden_dim))
         
-
-#         # Process Single Representation into qkv points
-#         qp = self.linear_qp(single)
-#         qp = torch.stack(qp.chunk(3, dim=-1), dim=-1)
-#         qp = frames[..., None].apply(qp)
-#         qp = qp.view(qp.shape[:-2] + (self.heads, self.qk_points, 3))
-
-#         kp = self.linear_kp(single)
-#         kp = torch.stack(kp.chunk(3, dim=-1), dim=-1)
-#         kp = frames[..., None].apply(kp)
-#         kp = kp.view(kp.shape[:-2] + (self.heads, self.qk_points, 3))
-
-#         vp = self.linear_vp(single)
-#         vp = torch.stack(vp.chunk(3, dim=-1), dim=-1)
-#         vp = frames[..., None].apply(vp)
-#         vp = vp.view(vp.shape[:-2] + (self.heads, self.v_points, 3))
-
         # Process Single Representation into qkv points
         qp = self.linear_qp(single)
         qp = qp.view(qp.shape[:-1] + (self.heads, self.qk_points, 3))
