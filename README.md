@@ -18,7 +18,7 @@
   </tr>
 </table>
 
-The **purple spheres** show the trajectory as they converge to the final structure. The **light blue** structure is refolded sample.
+The **purple spheres** show the trajectory as they converge to the final structure. The **light blue** structure is the sample refolded.
 
 ## Approach
 ### 1. Flow Matching Framework using HiRef-OT
